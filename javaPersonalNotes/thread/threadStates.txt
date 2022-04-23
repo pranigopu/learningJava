@@ -1,0 +1,7 @@
+Thread states
+Running
+Ready: Thread can be executed whenever the scheduler allocates it processing time
+Suspended: Thread is temporarily stopped, after a context switch
+Resumed: Thread picks up from the state it was suspended or blocked
+Blocked: Stopped when waiting for resources
+Terminated

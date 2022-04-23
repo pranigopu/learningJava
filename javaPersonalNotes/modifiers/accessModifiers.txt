@@ -1,0 +1,14 @@
+Java access modifiers
+--
+Determines the permissions to access classes, methods or variables.
+They define the scope of a class, method or variable.
+--
+1. Default
+2. Private
+3. Protected
+4. Public
+---*---*---
+2.
+Private
+___
+Scope is within the class it is declared or defined in.

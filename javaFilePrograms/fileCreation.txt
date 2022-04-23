@@ -1,0 +1,14 @@
+Creating a file
+---------------
+To create a file,
+
+1.
+Instantiate a 'File' object using your desired path or name for your file, such as
+	File myFile = new File("test.txt");
+
+2.
+Using the 'File' object, call the 'createNewFile' method, such as
+	myFile.createNewFile();
+
+3.
+If a file with the same path exists, the method returns false, else it returns true. If it returns true, it means an empty file with the path or name you chose when instantiating the 'File' object is created.

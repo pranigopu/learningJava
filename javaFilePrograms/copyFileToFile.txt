@@ -1,0 +1,39 @@
+Copying a file's contents to another file
+-----------------------------------------
+This involves
+1. Two file objects
+2. An object to read from one file
+3. An object to write to the other file 	
+
+1.
+Instantiate the two desired file objects, and create them if they don't exist. Let's say the file objects are 'source' and 'destination'.
+
+2.
+To make a file reader, we have multiple ways. One way is to use the 'FileReader' class, since it reads character-by-character, which is how I intend to write to the other file. Instantiate a 'FileReader' object using the 'source' 'File' object, in the manner explained in "readFromFile.txt". Of course, import the necessary modules and classes as required.
+
+3.
+To make a file writer, we have multipe ways. One way is to use the 'FileOutputStream' class, which allows you to write characters into a file using a byte output stream to the file.
+
+First, import the necessary modules and classes
+	import the required classes
+	import java.io.FileOutputStream;
+	import java.io.IOException; //If not imported already
+
+Next, instantiate the 'FileOutputStream' object
+Instantiate the 'FileOutputStream' writer using the 'destination' 'File' object, such as
+	FileOutputStream fw = new FileOutputStream(destination);
+
+4.
+Now, using the following loop, write to 'destination' the character read from 'source'
+	int i;
+	while((i = fr()) != -1)
+        {
+            fw.write((char)i);
+        }
+
+5.
+Close the file streams using the 'close' method
+	fr.close();
+	fw.close();
+
+The result is that the contents of 'source' will be in 'destination'.

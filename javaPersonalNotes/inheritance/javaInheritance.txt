@@ -1,0 +1,12 @@
+Java inheritance
+1. Types
+	1.1. Single
+	1.2. Multiple
+	1.3. Hierarchical
+2. Implementation
+	2.1. Keywords
+		2.1.1. "extends"
+		2.1.2. "super"
+		2.1.3. "this"
+---*---*---
+Inheritance is the re-using of a class’ fields and methods for another class that is defined as a derived or child class of the other, “parent”, class. The child can have fields and methods apart from the ones inherited from the parent.

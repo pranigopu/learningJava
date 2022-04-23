@@ -1,0 +1,32 @@
+Try-catch statement properties
+1. One try block can be attached to multiple catch blocks
+2. When exception occurs, 
+   - the next statements in try block are ignored
+   - each catch block is checked until the exception in caught
+3. When no exception occurs, catch blocks are ignored
+4. A generic catch block can handle all exceptions
+5. A catch block with an exception as its argument can handle only that exception
+6. Catch blocks must be ordered from most specific to general
+   --i.e. from child exceptions to parent exceptions--
+---*---*---
+NOTES ON CERTAIN PROPERTIES...
+---*---*---
+6. 
+___
+The parent exceptions must be caught before its child exceptions. Otherwise, since the child exception will be checked when checking the parent exception, the child exception's catch block will never be executed.
+___
+For example...
+try
+{
+	<code>
+}
+catch(Exception e) //BLOCK 1
+{
+	<code>
+}
+catch(ArithmeticException e) //BLOCK 2
+{
+	<code>
+}
+--x--
+BLOCK 2 will never execute since BLOCK 1 catches the parent exception of the exception in BLOCK 2.

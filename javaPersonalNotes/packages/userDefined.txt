@@ -1,0 +1,46 @@
+User defined java packages
+---*---*---
+CREATION
+___
+To create a package, precede one or more source code files with the statement
+	package <pkgname>;
+The name you choose in the place of <pkgname> is your package name. The source code file would be of .java extension itself.
+---*---*---
+COMPILATION
+___
+Compliling the package is mostly done like a normal .java program. You need to specify the directory where you want to store the package using the following command option
+	javac -d <directory_path> <program_name>.java
+e.g.	javac -d ./javaPrograms/ someProgram.java
+___
+A package becomes a subdirectory of the specified directory.
+___
+If you do not specify the directory in which want to make the package, the package does not form, and the program compiles like a normal program.
+___
+After the compilation, a new directory with the package name is created in the specified directory. To check this out, try the following program.
+	package uselessFunctions;
+	public class Useless 
+	{
+   	 public static void info()
+   	 {
+     	   System.out.println("What info do you want? Go away!");
+   	 } 
+	}
+---*---*---
+IMPORTANT POINTS
+___
+Implementation points...
+--x--
+- "package" statement must precede the rest of the whole source code
+- A package is always defined by a directory with the same name
+- All package classes must
+	- Be in the package directory
+	- Have the "package" statement as the first line
+	- Be compiled before use
+- Even the source file needs to be saved in the package directory
+- "-d" is a command option used before specifying the directory the classes being compiled need to be stored in.
+- Only one public class can be defined in a .java file, but many .java files can exist in a package
+- To include many public classes in a package, just begin each of their source files with the package keyword and package name, then compile them all
+___
+Cautionary points...
+--x--
+- If you do not precede a source code with the package statement, its classes cannot be accessed through the package

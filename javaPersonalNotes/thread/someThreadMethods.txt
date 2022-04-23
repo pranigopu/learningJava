@@ -1,0 +1,11 @@
+Some thread methods
+---*---*---
+- getName(): Obtains thread name
+- getPriority(): Obtains the thread priority level
+- isAlive(): Determine whether a thread is running
+- join(): Wait for a thread to terminate
+- run(): Start running a thread
+- sleep(long millis, int nanos): Suspend thread for a given amount of time
+- start(): Start a thread by calling the run method
+- notify(): readies a thread that called wait() with the same object
+- notifyAll(): readies all threads that called wait() with the same object

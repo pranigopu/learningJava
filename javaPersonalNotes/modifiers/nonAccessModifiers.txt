@@ -1,0 +1,28 @@
+Java non-access modifiers
+1. static
+2. final
+3. abstract
+4. synchronised
+5. transient
+6. volatile
+7. native
+---*---*---
+1.
+static
+___
+Uses: 
+block, variable, method, class
+___
+Purpose:
+Makes the entity available for the whole program.
+___
+Properties:
+- They can be created in a class only.
+- A static variable essentially becomes a global variable, but is accessible only through objects.
+- A static method can be called without needing to create an object of the class.
+- A class can be made static only if it is a nested class
+---*---*--
+2. 
+final
+___
+A final variable is a variable that is turned into a constant. It is treated as a constant.

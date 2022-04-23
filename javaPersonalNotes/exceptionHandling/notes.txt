@@ -1,0 +1,5 @@
+NOTES
+---*---*---
+NOTE 1
+___
+Division by 0 results in a runtime exception by default, unless 0 is typecasted as float, which would yield infinity.

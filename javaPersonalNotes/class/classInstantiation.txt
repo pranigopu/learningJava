@@ -1,0 +1,29 @@
+Java class instantiation
+__
+Instantiating a class means creating an object.
+To create an object we use the keyword
+--
+---*---*---
+1.
+"new"
+e.g.
+public Student
+{
+	int id;
+	String name;
+}
+public CMS
+{	
+	public static void main( )
+	{
+		//Creating objects
+		Student student1 = new Student( );
+		Student student2 = new Student( );
+		
+		//Initialising objects
+		student1.id = 1;
+		student1.name = “abc”;
+
+		student2.id = 2; 		student2.name = “xyz”;
+	}
+}

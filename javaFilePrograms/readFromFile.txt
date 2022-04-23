@@ -1,0 +1,33 @@
+Reading a file's contents
+-------------------------
+There are multiple ways to do this. One way is to use the 'FileReader' class. Since using 'FileReader' involves input operations (inputting from a file), the method in which it is used needs to handle IO Exceptions in some way. Of course, this means you must also import the 'IOException' class in the program.
+
+1.
+Import the 'FileReader' class and the 'FileNotFoundException' as follows
+	import java.io.FileReader;
+	import java.io.FileNotFoundException; //In case the file is not found
+	import java.io.IOException;
+
+2.
+Instantiate a 'File' object with the path or name of your desired file, such as
+	File myFile = new File("test.txt");
+
+3.
+Instantiate a 'FileReader' object using the previous 'File' object, such as
+	FileReader fr = new FileReader(myFile);
+This will create and allow 'fileReader' to read from a byte input stream producing data from the desired file. If the file is not found, then a 'FileNotFoundException' will be thrown.
+
+4.
+To read all the file's data and display it on screen, we can read byte-by-byte, using a loop as follows
+	int i;
+	while((i = fr()) != -1) //
+        {
+            System.out.print((char)i); //The integer is typecasted as a character
+        }
+Here, the 'read' method reads a byte of data as an integer, which is why we need to typecast it. Note that -1 is the ASCII value for the 'End Of File' character. Hence, we check whether we reached the end of the file at the start of every iteration.
+
+5.
+If you need to reassign 'fr', or simply close the file stream close it reads from, do
+	fr();
+
+NOTE: The method using the 'FileReader' object needs to handle IO Exception in some way, either using a 'throws IOException' statement after the argument parantheses, or using a try-catch block.

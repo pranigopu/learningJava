@@ -1,0 +1,68 @@
+Java inheritance keywords
+1. "extends"
+2. "super"
+3. "this"
+---*---*---
+1. 
+"extends"
+___
+Functions: Create a child class of a class.
+___
+Syntax:
+class ChildClass extends ParentClass
+{
+	//methods and fields
+}
+---*---*---
+2.
+"super"
+___
+For variables: A reference variable used inside a sub-class method to refer to a super class variable.
+e.g.
+	class Animal
+	{  
+		String color="white";  
+	}  
+	class Dog extends Animal
+	{  
+		String color="black";  
+		void printColor(){  
+		System.out.println(color);//prints color of Dog class  
+		System.out.println(super.color);//prints color of Animal class  
+	}
+___
+For methods: A can also refer to methods inside the parent class.
+NOTE: Private methods cannot be called using super, only public and protected methods.
+e.g.
+	class Animal
+	{  
+		void eats()
+		{
+			System.out.println("eating...");
+		}  
+	}  
+	class Dog extends Animal
+	{   
+		void barks()
+		{
+			System.out.println("barking...");
+		}
+		void eats()
+		{
+			System.out.println("eating dog food...");
+		}
+		void work()
+		{
+			super.eats();
+			barks();
+		}
+	}
+___
+For constructors: super() is used to call a constructor of the parent class.
+---*---*---
+3. "this"
+___
+A reference variable used to refer to the current object’s field. 
+___
+e.g.
+In a class constructor, there are formal parameters, and there may be a need to refer to the actual fields of the object. If the formal parameters have the same name as the fields, “this” can differentiate the fields.

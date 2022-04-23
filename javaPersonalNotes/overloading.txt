@@ -1,0 +1,11 @@
+Overloading
+1. Method overloading
+2. Constructor overloading
+---*---*---
+1.
+Method overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. 
+___
+NOTE: If main method is overloaded, the main with arguments other than String args[ ] will be treated as a separate method.
+---*---*---
+2.
+Method overloading is a feature that allows a class to have more than one constructor, if their argument lists are different. 

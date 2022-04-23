@@ -1,0 +1,7 @@
+Thread
+---*---*---
+A thread of execution is the smallest sequence of programmed instructions that can be managed independently by a thread scheduler.
+___
+A thread scheduler is typically a part of the operating system.
+---*---*---
+A thread is the basic unit of process execution.

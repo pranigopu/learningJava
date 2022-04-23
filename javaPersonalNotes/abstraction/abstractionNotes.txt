@@ -1,0 +1,7 @@
+ABSTRACTION NOTES
+---*---*---
+NOTE 1:
+___
+Why can abstract class have a constructor while an interface cannot, even though the former cannot be instantiated?
+___
+An abstract class can have a constructor because it can be indirectly instanstiated through its concrete child classes. However, an interface cannot be instantiated in any way, since it is merely a framework of method declarations and constants.

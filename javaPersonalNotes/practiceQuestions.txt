@@ -1,0 +1,70 @@
+Practice questions
+1. What are the primitive data types in Java? Is a Java primitive data type stored on stack or heap? What is the default value of char data type in Java?
+2. What is the output of - System.out.println(1.0/0);
+3. Differentiate between primitive and non-primitive data types in Java with examples.
+4. What is the difference between ++x and x++ under increment operators?
+5. Write a complete program explaining the increment and decrement operators in Java.
+6. What are bitwise logical Operators?
+7. What are logical binary operators?
+8. Explain conditional operator with an example program.
+9. Write a program to demonstrate the use of various conditional statements and looping structures in Java.
+---*---*---
+1.
+___
+Primitive data types in Java:
+- integer
+	- byte
+	- short
+	- int
+	- long
+- character (char)
+- floating point
+	- float
+	- double
+- boolean
+___
+Primitive data type class variables are stored in the heap. Primitive data type method variables are stored in the stack frame of the method in the program's stack.
+___
+The default value of a char data type variable in Java is '\u0000'.
+---*---*---
+2.
+___
+Infinity (inf), because 1.0 is float. If it were an int, it would be arithmetic exception.
+---*---*---
+3.
+___
+Primitive data types are predefined in Java, i.e. their size and range is fixed. They have no additional fields and methods, and are the fundamental ways of storing, accessing and manipuating data.
+--x--
+Examples: char, int, float
+___
+Non-primitive data types are built using primitive data types, either by the programmer or by available modules. They may have additional fields and methods, and are usually a compound of data types.
+--x--
+Examples: String, File, arrays
+---*---*---
+4.
+___
+In ++x, the increment has a higher precedence than other operators, hence x is first incremented before anything else happens to x.
+___
+In x++, the increment has lower precedence than other operators, hence x is incremented after a condition is checked or an operation is performed on x.
+---*---*---
+8.
+___
+A conditional operator is an alternative to the if-else control structure.
+___
+It operates using three operands, hence is a ternary operator:
+- expression
+- if true
+- if false
+___
+If the condition holds, the true part is executed or used, else the false part is executed or used.
+___
+The syntax is:
+(condition)? true_expression : false_expression;
+___
+Examples
+--x--
+Ex. 1
+b = (a < 3)? 20 : 30;
+--x--
+Ex. 2
+(n < 0)? System.out.println("Negative") : System.out.println("Non-negative");

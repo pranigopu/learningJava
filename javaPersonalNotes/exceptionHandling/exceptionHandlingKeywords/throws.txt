@@ -1,0 +1,10 @@
+throws keyword (IT IS DIFFERENT FROM throw keyword!)
+---*---*---
+This keyword is used to indicate what checked exceptions need to be handled by a method. Note that it only handles checked exceptions, not runtime i.e. unchecked exceptions.
+___
+Using a single throws statement, multiple exceptions can be indicated for a method to handle.
+---*---*---
+It is similar to try-check-finally statements, except that
+- It only deals with checked exceptions
+- It is applied to methods after the arguments and before the code blocks
+- It is much simpler to use and understand

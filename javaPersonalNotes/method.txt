@@ -1,0 +1,8 @@
+Java method
+1. Definition
+2. Syntactical structure
+3. Properties
+4. Types
+	4.1. Normal method
+	4.2. Class constructor
+	4.3. Abstract method --a merely declared method--

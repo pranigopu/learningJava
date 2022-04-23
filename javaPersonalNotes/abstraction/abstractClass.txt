@@ -1,0 +1,9 @@
+Abstract class
+---*---*---
+An abstract class is a class that cannot be instantiated, i.e. no objects can belong to such a class.
+---*---*---
+It may contain normal methods and abstract methods, i.e. methods that are merely declared, not defined. 
+___
+If it contains an abstract method, then this method must be implemented in a concrete subclass of the abstract class.
+___
+An abstract subclass need not implement the abstract method. An abstract method can be implemented in multiple subclasses.

@@ -1,0 +1,9 @@
+Thread creation
+1. Extending the Thread class
+2. Implementing the Runnable interface
+---*---*---
+Thread class vs. Runnable interface
+___
+If we extend a class from the Thread class, this class cannot extend any other class because Java does not support multiple inheritance. However, since a class can implement an interface as well as extend from another class, using Runnable avoids overcomes this limitation.
+___
+Thread class provides many in-built methods for dealing with threads that are not available in the Runnable interface.

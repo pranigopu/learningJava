@@ -1,0 +1,9 @@
+Built-in java packages
+---*---*---
+Some notable packages:
+java.lang: 	Supports creation of classes and objects
+java.io: 	Supports input/output operations
+java.util: 	Supports many miscellaneous useful functionalities
+java.applet: 	Supports applet creation
+java.awt: 	Is an abstract window toolkit, supports GUI or window-based applications
+java.net: 	Supports networking operations

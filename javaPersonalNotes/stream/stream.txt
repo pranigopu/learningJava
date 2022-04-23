@@ -1,0 +1,17 @@
+Java streams
+1. Byte stream
+--handles input and output of bytes--
+	1.1. InputStream
+		1.1.1. System.in
+		--an input stream directly connected to keyboard input in the console--
+	1.2. OutputStream
+2. Character stream
+--handles input and output of characters--
+	2.1. Reader
+	2.2. Writer
+---*---*---
+A stream is a sequence of data. It serves as an abstraction for input and output operations.
+___
+A stream either produces or consumes data. A stream is linked to a physical device by the Java I/O system.
+___
+All streams behave in the same manner, even if the actual physical devices they are linked to are different. Hence, the same I/O classes and methods can be applied to different types of devices.

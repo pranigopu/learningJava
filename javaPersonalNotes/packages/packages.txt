@@ -1,0 +1,14 @@
+Java packages
+1. Built-in
+2. User defined
+	- CREATION
+	- COMPILATION
+	- IMPORTANT POINTS
+---*---*---
+Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces. It is a collection of classes, interfaces and other packages.
+---*---*---
+Purposes:
+- Organise related classes and interfaces.
+- Prevent name conflicts of classes and interfaces
+  --since different classes/interfaces with the same name can be in different packages--
+- Control access of classes and interfaces

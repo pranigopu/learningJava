@@ -1,0 +1,13 @@
+Parsed input
+---*---*---
+NECESSARY LIBRARIES
+- java.util.Scanner
+---*---*---
+USED CLASSES
+Scanner is class is used to parse primitive data types and strings from the input stream using regular expressions. 
+___
+In other words, it is used to break down an expression to process data as primitive data types or strings.
+---*---*---
+SYNTAX
+//Creating an object of class Scanner
+         Scanner in = new Scanner(System.in);

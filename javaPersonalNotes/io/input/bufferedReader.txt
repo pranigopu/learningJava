@@ -1,0 +1,27 @@
+Buffered input
+---*---*---
+NECESSARY LIBRARIES
+___
+- java.io.BufferedInputStream
+- java.io.BufferedReader
+- java.io.InputStreamReader
+___
+To allow for input and output exception handling, import the library:
+- java.io.IOException
+---*---*---
+USED CLASSES
+This way of input involves wrapping the standard input stream (System.in) in an InputStreamReader object, and then wrapping the InputStreamReader object in a BufferedReader object.
+___
+WHY USE THESE CLASSES?
+--x--
+InputStreamReader is a class that reads bytes and decodes them into characters. It deals with byte stream.
+BufferedReader is a class that reads from a character input stream and buffers them using a file. It deals with character stream.
+---*---*---
+PURPOSE OF BUFFERED INPUT
+Buffered input enables efficient reading since any input is first entered into the buffer to be processed as a whole.
+---*---*---
+SYNTAX
+/*
+Creating an object of class InputStreamReader wrapped in an object of the class BufferReader
+*/ 
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

@@ -1,0 +1,24 @@
+Thread priority
+1. Definition
+2. Some Java methods
+3. Predefined values
+---*---*---
+1. Definition
+___
+A thread priority is a number used by the thread scheduler to decide when to allow the thread to run.
+---*---*---
+2. Some Java methods
+___
+These methods are available in the class Thread.
+___
+setPriority(int level)
+Specifies a new priority for the thread calling the method.
+___
+getPriority()
+Returns the priority level of the thread calling the method.
+---*---*---
+3. Predefined values
+___
+MIN_PRIORITY = 1
+MAX_PRIORITY = 10
+NORM_PRIORITY = 5

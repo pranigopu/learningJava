@@ -1,0 +1,2 @@
+PNRNO          FROM           DESTINATION    DATE           PNRNAME        TRAINNO
+101            PUNE           BANGALORE      12/10/2020     Tappu          231

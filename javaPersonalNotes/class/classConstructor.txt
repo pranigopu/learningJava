@@ -1,0 +1,19 @@
+Java class constructor
+1. Default constructor
+2. Parametric constructor
+---*---*---
+A class constructor is a special subroutine or method called to initialise an object. Though they are similar, a constructor is dissimilar from methods in some key ways:
+- They have no return type, not even specified as void
+- Necessaily share their name with its class
+---*---*---
+1.
+Default constructor
+___
+No arguments are passed i.e. object is initialised with default values.
+___
+A class without an explicitly stated constructor has a default constructor.
+---*---*---
+2.
+Paramteric constructor
+___
+Arguments are passed i.e. object is initialised with specified values.

@@ -1,0 +1,96 @@
+Enumeration in Java
+1. Definition
+	1.1. Definition of the word "enumeration"
+	1.2. Enumeration in Java
+2. Purpose
+3. Application of enumeration
+4. Properties of enumeration
+5. Programs
+	5.1. SimpleEnumDemo.java --simple demo of enumeration--
+	5.2. CarTopSpeeds.java --enumeration with variables and constructors--
+	5.3. CompoundConstantEnumDemo.java --enumeration with multiple parameters--
+------------------------
+1.
+Definition
+---*---*---
+1.1.
+Definition of the word "enumeration"
+___
+An enumeration is a complete, ordered listing of all the items in a collection or set.
+---*---*---
+1.2.
+Enumeration in Java
+___
+In Java, enumeration refers to the ordered listing of various named constants in a form similar to a class. In other words, if you want to refer to certain constants using names, you can use enumeration, instead of using variables. It has a similar use to the DEFINE preprocessor directive in C.
+___
+An alternative to enumeration would be to declare final variables in a class. However, doing so will not allow you to access the name of the constant.
+------------------------
+2.
+Purpose
+---*---*---
+Enumeration provides a much more convenient way of naming and using named constants.
+___
+It is especially useful because complex and simple concepts can 
+------------------------
+3.
+Application of enumeration
+---*---*---
+To define an enumeration, use the following syntax:
+enum MyConstants
+{
+	named_const1, named_const2, ... named_constn;
+	<variables, methods and constructors>
+}
+---*---*---
+To pass values to the named constants, make and call constructors as follows:
+enum MyConstants
+{
+	named_const1(<actual_args1>), named_const2(<actual_args2>), ... named_constn(<actual_args3>);
+	<var1>;
+	<var2>
+	.
+	.
+	.
+	<varn>
+	<modifiers> MyConstants(<formal args>)
+	{
+		this.var1 = arg1;
+		this.var2 = arg2;
+		.
+		.
+		.
+		this.varn = argn;
+	}
+}
+___
+For example,
+enum TopSpeeds
+{
+    buggati_veyron(407),
+    lamborghini_aventador(349),
+    ferrari_enzo(355),
+    lotus_evija(320);
+    int topSpeed;
+    private TopSpeeds(int topSpeed)
+    {
+        this.topSpeed = topSpeed;
+    }
+}
+___
+Note that the constructors are called using the named constants themselves.
+---*---*---
+To get all the named constants of an enumeration into an array, do:
+MyConstants[] x = MyConstants.values();
+------------------------
+4.
+Properties of enumeration
+---*---*---
+- An enumeration is defined in a manner similar to a class, where the "class" keyword in relaced by the "enum" keyword.
+- An enumeration cannot be instantiated like a class.
+- An enumeration can have methods and constructors.
+- An name in an enumeration, when accessed, is merely the name itself.
+- Variables defined in the enumeration can be used to store the values of the named constants.
+- Constructors can help you pass values for a named constants.
+- The named constants defined in the enumeration are public, static and final by default.
+- The named constants in an enumeration can be used in a switch-case statement, as demonstrated in SwitchEnumDemo.java.
+- Enumeration variables are declared and used like a variable of a primitive data type.

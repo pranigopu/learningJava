@@ -1,0 +1,57 @@
+Exception
+1. Built-in exceptions
+	1.1. Some important exceptions
+		1.1.1. 	ArithmeticException
+		1.1.2. 	ArrayIndexOutOfBoundsException
+		1.1.3. 	ClassNotFoundException
+		1.1.4. 	FileNotFoundException
+		1.1.5. 	IOException
+		1.1.6. 	InterruptedException
+		1.1.7. 	NoSuchFieldException
+		1.1.8. 	NoSuchMethodException
+		1.1.9. 	NullPointerException
+		1.1.10. NumberFormatException
+		1.1.11. RuntimeException
+		1.1.12. StringIndexOutOfBoundsException
+2. User-defined exception
+3. Checked exception
+   --
+   EXAMPLES
+   - IOException
+   - SQLException
+   - ClassNotFoundException
+   - MalformedURLException
+--
+4. Unchecked exception
+	4.1. RuntimeException
+	     --
+	     SUB-CLASSES OF RunTimeException
+	     - ArithmeticException
+	     - ArrayOutOfBound
+	     - IllegalArgumentException
+	     - NullPointerException
+	     --
+---*---*---
+An exception is an unwanted event occurring in a program's execution that disrupts the algorithmic execution of the program.
+___
+An exception is represented by a class, which contains the relevant methods for handling the exception. 
+___
+There is a heirarchy among exceptions too, so some exceptions are parent classes of some other exceptions.
+---*---*---
+1. Built-in exceptions
+___
+These are exceptions defined in predefined libraries.
+---*---*---
+2. User-defined exceptions
+___
+Sometimes, the built-in exceptions in Java are not able to describe certain situations. In such cases, user can also create exceptions.
+---*---*---
+3. Checked exception
+___
+Checked exception is an exception handled at compile time.
+___
+If you fail to handle them in the source code itself, the code will not compile.
+---*---*---
+4. Unchecked exception
+___
+Unhecked exception is an exception checked only at run time.

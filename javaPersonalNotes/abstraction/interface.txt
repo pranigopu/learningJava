@@ -1,0 +1,63 @@
+Java interface
+1. Defining properties
+	1.1. Only contains abstract methods
+	1.2. Only contains public, static and final variables by default
+2. Primary purposes
+	2.1. Achieve maximum abstraction between program and user
+	2.2. Implement multiple inheritance
+3. Other properties
+	3.1. Cannot be instantiated like a class
+	3.2. Cannot be declared as private or protected
+	3.3. Can be implemented by more than one class
+4. Implementation notes
+5. Relation to abstract class
+---*---*---
+It is a specification of abstract methods and of constants.
+---*---*---
+1. Defining properties
+___
+1.1. Only contains abstract methods
+1.2. Only contains public, static and final variables by default
+___
+1.1.
+NOTE 1: an interface can use a class to define the abstract methods
+---*---*---
+2. Primary purposes
+___
+2.1. Achieve maximum abstraction between program and user
+2.2. Implement multiple inheritance
+--Cannot be done by simple inheritance--
+	2.2.1. "implements" keyword
+___
+2.2. 
+Implementing multiple inheritance
+___
+2.2.1. 
+"implements" keyword
+class Class1 implements Interface1, Interface2, etc.
+{
+	...
+}
+---*---*---
+3.
+Other properties
+___
+3.1. Cannot be instantiated like a class
+3.2. Cannot be declared private or protected
+3.3. Can be implemented by multiple classes
+---*---*---
+4.
+Implementation notes
+___
+4.1. Only classes can implement interfaces --using "implements" keyword--
+	4.1.1. A class implementing an interface must either 
+		a. implement all the interface's methods, or
+		b. be declared as abstract
+		   --
+		   in this case, a concrete child class must implement all the interface's methods
+		   --
+	4.1.2. A class can implement multiple interfaces
+	4.1.3. A class implementing an interface cannot change the interface's variables, since the later are final (i.e. constant)
+	4.1.4. An interface may be implemented by multiple classes
+4.2. Interfaces can extend other interfaces --but cannot implement them--
+---*---*---

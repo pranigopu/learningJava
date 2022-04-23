@@ -1,0 +1,39 @@
+1. Differentiate between an applet and an application program. (5 marks)
+2. Why applet doesn't require main method? (2 marks)
+3. Explain the life cycle of an applet. (10 marks)
+------------------------
+1.
+An applet is a program that is meant to be embedded in an HTML web document. It is used to give a web page functionalities that can be achieved through a program. Applets do not run on an operating system, unlike a regular application program. They instead run on Java-enabled web browsers. Also, applets do not require a main function (discussed in question 2).
+
+An aaplication program is a program that is executed from the main memory of a computer. It is used to perform a task or set of tasks locally (in the host system). It runs on the JVM and the operating system. Application programs need to call the main method, since the the main method is used to execute the instructions of the program, directlt or indirectly (by calling other methods).
+------------------------
+2.
+A main method (declared as publc static void main(String args[])) is the only function that the operating system can access directly. However, in the case of applets, which do not run on an operating system, certain methods of applet class to start and execute the applet code are automatically called when the applet program is loaded. 
+
+Hence, an applet does not require a main method to begin execution, because it has and needs to have its own methods, given that they do not run on operating systems but on web browsers.
+------------------------
+3.
+Basic overview:
+- Applet is initialized
+- Applet is started
+- Applet is painted
+- Applet is stopped
+- Applet is destroyed
+
+- public void init(): is used to initialized the Applet, and is invoked only once
+- public void start(): is used to start the Applet
+- public void paint(Graphics g): is used to redraw the output whenever required
+- public void stop(): is invoked when Applet must stop or browser is minimized
+- public void destroy(): is used to destroy the Applet, and is invoked only once
+------------
+In initialisation, the applet initialises variables.
+
+In start, the applet is actually executed.
+
+In paint, any change on the appearance of the web page due to an output is reflected.
+
+In stop, any threads that are not required to run when the applet is not visible are suspended. The applet is not visible when
+- the web browser leaves the HTML document where the applet is running
+- the web browser is minimised
+
+In destruction or termination, the applet is removed completely from the memory used to execute programs. A destroy method is preceded by a stop method.

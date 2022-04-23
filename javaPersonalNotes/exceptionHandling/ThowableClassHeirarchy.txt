@@ -1,0 +1,23 @@
+1. Object
+	1.1. Throwable
+		1.1.1. Exception
+			1.1.1.1. Checked exception
+				 --
+				 EXAMPLES
+				 - IOException
+				 - SQLException
+				 - ClassNotFoundException
+				 - MalformedURLException
+				 --
+			1.1.1.2. Unchecked exception
+				1.1.1.2.1. RuntimeException
+				 	   --
+					   SUB-CLASSES
+					   - ArithmeticException
+					   - ArrayOutOfBound
+					   - IllegalArgumentException
+					   - NullPointerException
+					   --
+		1.1.2. Error
+			1.1.2.1. Virtual machine error
+			1.1.2.2. Assertion error
